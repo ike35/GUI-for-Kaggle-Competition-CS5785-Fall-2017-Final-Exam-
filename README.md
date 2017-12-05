@@ -5,6 +5,9 @@ A web-based image search engine user interface that users can directly access us
 
 ## How to use
 1. Copy and paste your result.csv to the folder
-2. Run ```node app```
-3. Go to ```http://localhost:1234/?id={id number}```, e.g. ```http://localhost:1234/?id=0```
-4. Have fun : ) 
+2. Install [Node.js](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/) to install pakages (```npm install .```)
+3. Run ```node app```
+4. Go to ```http://localhost:1234/?id={id number}```, e.g. ```http://localhost:1234/?id=0```
+5. Have fun : ) 
+
+![alt text](./snapshot.png)
