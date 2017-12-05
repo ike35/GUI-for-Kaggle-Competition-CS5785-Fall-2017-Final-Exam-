@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Display</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <style type="text/css" media="screen">
+    </style>
+    <body>
+
+      <div class="container">
+        <div>
+          
+          
+          <div>
+            <% var last = Math.max(parseInt(id)-1,0); var next = Math.min(parseInt(id)+1,1999); %>
+            <a href="/?id=<%= last %>"><img src="./images/left.png" height="25px" width="25px"></a>
+              <span style="font-size: 20px"> ID: <%= id %> </span>
+            <a href="/?id=<%= next %>"><img src="./images/right.png" height="25px" width="25px"></a>
+          </div>
+          <% for(var i = 0 ; i < 5 ; i++) {%>
+            <p><%= data[i] %></p>
+          <% } %>
+          <% for(var i = 0 ; i < 20 ; i++) {%>
+            <img src="./images/images_test/<%= images[i] %>" height="150px" width="150px"> 
+            <% if (i % 5 == 4) { %>
+              <br>
+            <% } %>
+          <% } %>
+        </div>
+
+      </div>
+      <script src="javascripts/jquery.js"></script>
+      <script src="javascripts/jquery.easing.min.js"></script>
+      <script src="javascripts/bootstrap.min.js"></script>
+    </body>
+</html>
